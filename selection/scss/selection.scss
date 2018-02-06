@@ -1,0 +1,94 @@
+//variables
+@import "import/variable.scss";
+@import "import/mixins.scss";
+body,
+    {
+    margin: 0;
+    padding: 0;
+    background: $bleu-claire;
+    font-family: PT Sans;
+    color: $gris-claire;
+}
+
+#header {
+    background: $jaune;
+    padding: 0.5%;
+    @include box-shadow(0px, 0px, 30px, #b47003, $inset: true);
+    text-align: center;
+    img {
+        width: 10%;
+        margin: auto;
+    }
+    h1 {
+        font-style: italic;
+        font-size: 1.5em;
+        margin: 1%;
+    }
+}
+
+.carousel {
+    display:block;
+    height: inherit;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sondage {
+    width: 25%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+    text-align: center;
+    padding: 2%;
+    background-color: $gris;
+    color: black;
+    transition: $transition;
+    @include box-shadow(0px, 0px, 15px, $bleu-foncé, $inset: false);
+    @include border-radius(7px);
+    &:hover {
+        transform: translateY(2px);
+    }
+    &:last-child {
+        cursor: pointer;
+    }
+    h2 {
+        font-size: 1em;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        line-height: 30px;
+        margin: 0;
+        margin-bottom: 1%;
+    }
+    .btn,
+    .btn-large {
+        background-color: $gris-foncé;
+        color: black;
+        transition: $transition;
+        margin: 2%;
+        &:hover {
+            transform: scale(1.02);
+            color: $gris-foncé;
+            background-color: $bleu-claire;
+        }
+        &:active {
+            transform: scale(1.05);
+        }
+        .fas {
+            font-size: 150%;
+            color: black;
+        }
+    }
+    .svg-inline--fa {
+        font-size: 6em;
+        margin: 2%;
+        color: $bleu-foncé;
+    }
+}
