@@ -1,0 +1,123 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #f2f1ee;
+  font-family: PT Sans;
+  color: #ebeae4;
+  letter-spacing: 1px; }
+
+header {
+  padding: 1%;
+  background-color: #2b489e;
+  text-align: center;
+  -webkit-box-shadow: inset 0px 0px 30px #0d193c;
+  -moz-box-shadow: inset 0px 0px 30px #0d193c;
+  box-shadow: inset 0px 0px 30px #0d193c; }
+
+h1 {
+  font-style: italic;
+  font-size: 2em; }
+
+main .ask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2%; }
+  main .ask h2 {
+    width: 80%;
+    text-align: center;
+    color: black;
+    font-family: cabin;
+    font-size: 2.2em;
+    margin-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 15px #adadad;
+    -moz-box-shadow: 0px 5px 15px #adadad;
+    box-shadow: 0px 5px 15px #adadad; }
+  main .ask .answer {
+    position: relative;
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #fec262;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 15px #adadad;
+    -moz-box-shadow: 0px 5px 15px #adadad;
+    box-shadow: 0px 5px 15px #adadad; }
+    main .ask .answer button {
+      display: block;
+      position: absolute;
+      right: -1.5%;
+      bottom: -1.5%;
+      border: none;
+      background: #d91e18;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      color: white;
+      padding: 17px;
+      padding-bottom: 14px;
+      padding-top: 14px;
+      font-size: 1.5em;
+      -webkit-box-shadow: inset 0px 0px 15px #96281b;
+      -moz-box-shadow: inset 0px 0px 15px #96281b;
+      box-shadow: inset 0px 0px 15px #96281b;
+      transition: linear 0.1s;
+      cursor: pointer; }
+      main .ask .answer button:hover {
+        background-color: #96281b; }
+
+form {
+  width: 100%; }
+  form input[type="radio"],
+  form input[type="checkbox"] {
+    display: none; }
+
+label {
+  margin-bottom: 4%;
+  margin-left: 15%;
+  display: block;
+  font-family: Cabin;
+  font-size: 1.8em;
+  transition: linear 0.15s;
+  cursor: pointer; }
+  label span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    margin-right: 7%;
+    border: 3px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    transition: linear 0.15s;
+    position: relative; }
+  label:last-child {
+    margin-bottom: 0; }
+  label input:hover + span,
+  label input:checked + span {
+    background-color: white; }
+
+input[type="checkbox"] + span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  margin-right: 7%;
+  border: 3px solid white;
+  border-radius: 25%;
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  transition: linear 0.15s;
+  position: relative; }
+
+/*# sourceMappingURL=sondage-front.css.map */

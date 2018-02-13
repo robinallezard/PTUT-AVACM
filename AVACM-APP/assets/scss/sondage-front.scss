@@ -1,0 +1,185 @@
+//variables
+@import "import/variable.scss";
+@import "import/mixins.scss";
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: $gris;
+    font-family: PT Sans;
+    color: $gris-foncé;
+    letter-spacing: 1px;
+}
+
+header {
+    padding: 1%;
+    background-color: $bleu-foncé;
+    text-align: center;
+    @include box-shadow(0px, 0px, 30px, #0d193c, $inset: true);
+}
+
+h1 {
+    font-style: italic;
+    font-size: 2em;
+}
+
+main {
+    .ask {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
+        h2 {
+            width: 80%;
+            text-align: center;
+            color: black;
+            font-family: cabin;
+            font-size: 2.2em;
+            margin-bottom: 3%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            @include border-radius(5px);
+            @include box-shadow(0px, 5px, 15px, #adadad, $inset: false);
+        }
+        .answer {
+            position: relative;
+            width: 80%;
+            padding-top:5%;
+            padding-bottom:5%;
+            background-color: $jaune;
+            @include border-radius(5px);
+            @include box-shadow(0px, 5px, 15px, #adadad, $inset: false);
+//            @include box-shadow(0px, 0px, 50px, rgba(172, 125, 0, 0.37), $inset: true);
+            button{
+                display:block;
+                position:absolute;
+                right:-1.5%;
+                bottom:-1.5%;
+                border: none;
+                background: $rouge;
+                @include border-radius(50%);
+                color:white;
+                padding:17px;
+                padding-bottom: 14px;
+                padding-top: 14px;
+                font-size: 1.5em;
+                @include box-shadow(0px, 0px, 15px, $pourpre, $inset: true);
+                transition: linear 0.1s;
+                cursor:pointer;
+                &:hover{
+                    background-color: $pourpre;
+                }
+
+            }
+        }
+    }
+
+}
+
+form {
+    width:100%;
+    input[type="radio"],
+    input[type="checkbox"] {
+        display: none;
+    }
+}
+
+label {
+    margin-bottom: 4%;
+    margin-left: 15%;
+    display: block;
+    font-family: Cabin;
+    font-size: 1.8em;
+    transition: linear 0.15s;
+    cursor: pointer;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        width: 15px;
+        height: 15px;
+        margin-right: 7%;
+        border: 3px solid white;
+        @include border-radius(50%);
+        transition: linear 0.15s;
+        position: relative;
+    }
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    input:hover + span,
+    input:checked + span {
+        background-color: white;
+    }
+}
+
+
+  input[type="checkbox"] + span {
+        display: inline-block;
+        vertical-align: middle;
+        width: 15px;
+        height: 15px;
+        margin-right: 7%;
+        border: 3px solid white;
+        @include border-radius(25%);
+        transition: linear 0.15s;
+        position: relative;
+    }
+
+//#reponse-radio,
+//#reponse-chekbox,
+//#reponse-boolean {
+//    position: relative;
+//    color: white;
+//    background-color: $jaune;
+//    margin-bottom: 3%;
+//    .fa-chevron-circle-right {
+//        position: absolute;
+//        right: -1%;
+//        bottom: -4%;
+//        font-size: 3em;
+//        color: $rouge;
+//        background-color: white;
+//        border-width: 0;
+//        @include border-radius(51%);
+//    }
+//}
+//#reponse-chekbox {
+//    span {
+//        display: inline-block;
+//        vertical-align: middle;
+//        width: 15px;
+//        height: 15px;
+//        margin-right: 7%;
+//        border: 3px solid white;
+//        @include border-radius(25%);
+//        transition: linear 0.15s;
+//        position: relative;
+//    }
+//}
+//label {
+//    margin-bottom: 2%;
+//    display: block;
+//    font-family: Cabin;
+//    font-size: 1.8em;
+//    transition: linear 0.15s;
+//    cursor: pointer;
+//    span {
+//        display: inline-block;
+//        vertical-align: middle;
+//        width: 15px;
+//        height: 15px;
+//        margin-right: 7%;
+//        border: 3px solid white;
+//        @include border-radius(50%);
+//        transition: linear 0.15s;
+//        position: relative;
+//    }
+//
+//    input:hover + span,
+//    input:checked + span {
+//        background-color: white;
+//    }
+//}

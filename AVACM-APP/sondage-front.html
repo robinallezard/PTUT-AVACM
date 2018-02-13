@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AVACM</title>
+    <!-- font   -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin|PT+Sans" rel="stylesheet">
+    <!--    feuille de style-->
+    <!-- <link rel="stylesheet" href="css/materialize.min.css"> -->
+    <link rel="stylesheet" href="assets/css/sondage-front.css">
+</head>
+
+<body>
+    <header>
+        <!-- nom sondage -->
+        <h1>Sondage étudiant</h1>
+    </header>
+    <main>
+        <form action="" method="post">
+<!--           première question-->
+            <div class="ask">
+                <h2>Comment vous êtes vous senti lors de l'examen?</h2>
+                <div class="answer">
+                    <label for="question1">
+                        <input id="question1" type="radio" name="test">
+                        <span class="span"></span>ça va bien merci
+                    </label>
+                    <label for="question2">
+                        <input id="question2" type="radio" name="test">
+                        <span class="span"></span>j'ai un peu mal à la tête
+                    </label>
+                    <label for="question3">
+                        <input id="question3" type="radio" name="test">
+                        <span class="span"></span>j'ai bien envie d'un kebab
+                    </label>
+                    <button onclick="scrollForm()"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+<!--            deuxième question-->
+           <div class="ask">
+                <h2>Comment vous êtes vous senti lors de l'examen?</h2>
+                <div class="answer">
+                    <label for="question4">
+                        <input id="question4" type="checkbox" name="test">
+                        <span class="span"></span>ça va bien merci
+                    </label>
+                    <label for="question5">
+                        <input id="question5" type="checkbox" name="test">
+                        <span class="span"></span>j'ai un peu mal à la tête
+                    </label>
+                    <label for="question6">
+                        <input id="question6" type="checkbox" name="test">
+                        <span class="span"></span>j'ai bien envie d'un kebab
+                    </label>
+                    <button onclick="scrollForm()"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </form>
+
+
+        <!--
+    <div id="reponse-radio">
+      <form class="" action="" method="post">
+        <label for="question1"><input id="question1" type="radio" name="test"><span class="span"></span>ça va bien merci</label>
+        <label for="question2"><input id="question2" type="radio" name="test"><span class="span"></span>j'ai un peu mal à la tête</label>
+        <label for="question3"><input id="question3" type="radio" name="test"><span class="span"></span>j'ai bien envie d'un kebab</label>
+      </form>
+      <i class="fas fa-chevron-circle-right" style=""></i>
+    </div>
+
+    <div id="reponse-chekbox">
+      <form class="" action="" method="post">
+        <label for="question4"><input id="question4" type="checkbox" name="test"><span class="span"></span>ça va bien merci</label>
+        <label for="question5"><input id="question5" type="checkbox" name="test"><span class="span"></span>j'ai un peu mal à la tête</label>
+        <label for="question6"><input id="question6" type="checkbox" name="test"><span class="span"></span>j'ai bien envie d'un kebab</label>
+      </form>
+      <i class="fas fa-chevron-circle-right" style=""></i>
+    </div>
+
+    <div id="reponse-boolean">
+      <form class="" action="" method="post">
+        <label for="question7"><input id="question7" type="radio" name="test"><i class="fas fa-chevron-circle-left" style=""></i></label>
+        <label for="question8"><input id="question8" type="radio" name="test"><i class="fas fa-chevron-circle-right" style=""></i></label>
+      </form>
+
+    </div>
+-->
+    </main>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/fontawesome-all.min.js"></script>
+</body>
+
+</html>
