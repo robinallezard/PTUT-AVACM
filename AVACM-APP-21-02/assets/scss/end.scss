@@ -1,0 +1,73 @@
+//variables
+@import "import/variable.scss";
+@import "import/mixins.scss";
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: $gris;
+    font-family: PT Sans;
+    color: $gris-foncé;
+    letter-spacing: 1px;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h2{
+  font-size: 3em;
+}
+
+p{
+    font-size: 1.5em;
+}
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+    width: 100%;
+    padding: 1%;
+    background-color: $bleu-foncé;
+    text-align: center;
+    @include box-shadow(0px, 0px, 30px, #0d193c, $inset: true);
+}
+
+#message{
+  width: 80%;
+  padding: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: $jaune;
+  @include border-radius(5px);
+  @include box-shadow(0px, 5px, 15px, #adadad, $inset: false);
+}
+
+a{
+  text-decoration: none;
+  display:block;
+  margin-top:1%;
+  border: none;
+  background-color: $bleu-claire;
+  padding: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-family: Cabin;
+  color:white;
+  letter-spacing: 2px;
+  @include border-radius(2%);
+  @include box-shadow(0px, 1px, 3px, rgb(27, 26, 27));
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: $transition;
+  &:hover{
+    transform: scale(1.03);
+  }
+}

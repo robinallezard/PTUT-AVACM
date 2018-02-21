@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AVACM</title>
+    <!-- font   -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin|PT+Sans" rel="stylesheet">
+    <!--    feuille de style-->
+    <!-- <link rel="stylesheet" href="assets/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="assets/css/sondage-front.css">
+</head>
+
+<body>
+    <header>
+        <!-- nom sondage -->
+        <h1>Sondage étudiant</h1>
+    </header>
+    <main ng-app="sondage" ng-controller="sondageCtrl">
+        <form action="end.html" method="post">
+            <!--           radio simple-->
+            <div class="ask">
+                <h2>Comment vous êtes vous senti lors de l'examen?</h2>
+                <div class="answer radio">
+                    <label for="question1">
+                        <input id="question1" type="radio" name="test" value="ça va bien merci">
+                        <span class="span"></span>ça va bien merci
+                    </label>
+                    <label for="question2">
+                        <input id="question2" type="radio" name="test" value="j'ai un peu mal à la tête">
+                        <span class="span"></span>j'ai un peu mal à la tête
+                    </label>
+                    <label for="question3">
+                        <input id="question3" type="radio" name="test" value="j'ai bien envie d'un kebab">
+                        <span class="span"></span>j'ai bien envie d'un kebab
+                    </label>
+                    <p class="error"></p>
+                    <strong class="btn-scroll"><i class="fas fa-chevron-right"></i></strong>
+                </div>
+            </div>
+
+            <!--           checkbox -->
+            <div class="ask">
+                <h2>Comment vous êtes vous senti lors de l'examen?</h2>
+                <div class="answer check">
+                    <label for="question4">
+                        <input id="question4" type="checkbox" name="test">
+                        <span class="span"></span>ça va bien merci
+                    </label>
+                    <label for="question5">
+                        <input id="question5" type="checkbox" name="test">
+                        <span class="span"></span>j'ai un peu mal à la tête
+                    </label>
+                    <label for="question6">
+                        <input id="question6" type="checkbox" name="test">
+                        <span class="span"></span>j'ai bien envie d'un kebab
+                    </label>
+                    <p class="error"></p>
+                    <strong class="btn-scroll"><i class="fas fa-chevron-right"></i></strong>
+                </div>
+            </div>
+            <!-- vrai ou faux -->
+            <div class="ask">
+                <h2>C'était cool?</h2>
+                <div class="answer bool">
+                    <label for="question7">
+                        <input id="question7" type="radio" name="test">
+                        <span class="false"></span>
+                    </label>
+                    <label for="question8">
+                        <input id="question8" type="radio" name="test">
+                        <span class="true"></span>
+                    </label>
+                    <p class="error"></p>
+                    <strong class="btn-scroll"><i class="fas fa-chevron-right"></i></strong>
+                </div>
+            </div>
+            <!--         echelle de valeurs   -->
+            <div class="ask">
+                <h2>sur une echelle de 1 à 10, combien avez vous eu mal?</h2>
+                <div class="answer scale">
+                    <label for="question9">
+                        <input id="question9" type="radio" name="test">
+                        <span></span>1
+                    </label>
+                    <label for="question10">
+                        <input id="question10" type="radio" name="test">
+                        <span></span>2
+                    </label>
+                    <label for="question11">
+                        <input id="question11" type="radio" name="test">
+                        <span></span>3
+                    </label>
+                    <label for="question12">
+                        <input id="question12" type="radio" name="test">
+                        <span></span>4
+                    </label>
+                    <label for="question13">
+                        <input id="question13" type="radio" name="test">
+                        <span></span>5
+                    </label>
+                    <label for="question14">
+                        <input id="question14" type="radio" name="test">
+                        <span></span>6
+                    </label>
+                    <label for="question15">
+                        <input id="question15" type="radio" name="test">
+                        <span></span>7
+                    </label>
+                    <label for="question16">
+                        <input id="question16" type="radio" name="test">
+                        <span></span>8
+                    </label>
+                    <label for="question17">
+                        <input id="question17" type="radio" name="test">
+                        <span></span>9
+                    </label>
+                    <label for="question18">
+                        <input id="question18" type="radio" name="test">
+                        <span></span>10
+                    </label>
+                    <p class="error"></p>
+                    <strong class="btn-scroll"><i class="fas fa-chevron-right"></i></strong>
+                </div>
+            </div>
+
+            <!--           réponse courte-->
+            <div class="ask">
+                <h2>un mot pour décrire cette expérience</h2>
+                <div class="answer phrase">
+                    <input id="question19" type="text" placeholder="votre texte ici..." name="test">
+                    <p class="error"></p>
+                    <strong class="btn-scroll"><i class="fas fa-chevron-right"></i></strong>
+                </div>
+            </div>
+
+            <div class="ask">
+                <h2>que conseillerez vous pour ameliorer cette app?</h2>
+                <div class="answer text">
+                    <textarea rows="3" placeholder="votre texte ici..."></textarea>
+                    <p class="error"></p>
+                    <!-- <strong class="btn-scroll"><i class="fas fa-chevron-right"></i></strong> -->
+                </div>
+                    <button type="submit">Fin</button>
+            </div>
+
+        </form>
+    </main>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/fontawesome-all.min.js"></script>
+    <script type="text/javascript" src="assets/js/sondage-front.js"></script>
+</body>
+</html>
