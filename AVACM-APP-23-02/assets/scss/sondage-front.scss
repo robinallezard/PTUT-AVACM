@@ -1,0 +1,309 @@
+//variables
+@import "import/variable.scss";
+@import "import/mixins.scss";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: $gris;
+  font-family: PT Sans;
+  color: $gris-foncé;
+  letter-spacing: 1px;
+}
+
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding: 1%;
+  background-color: $bleu-foncé;
+  text-align: center;
+  @include box-shadow(0px, 0px, 30px, #0d193c, $inset: true);
+}
+
+h1 {
+  font-style: italic;
+  font-size: 2em;
+}
+
+nav {
+  display: inline-block;
+  position: fixed;
+  top: 33%;
+  left: 2%;
+
+  a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    @include border-radius(50%);
+    border: 3px solid $pourpre;
+    margin: 25px;
+    transition: $transition;
+  }
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+
+.ask {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5% 2% 2%;
+
+  h2 {
+    width: 80%;
+    text-align: center;
+    color: black;
+    font-family: cabin;
+    font-size: 2.2em;
+    margin-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    @include border-radius(5px);
+    @include box-shadow(0px, 5px, 15px, #adadad, $inset: false);
+  }
+}
+
+.answer {
+  position: relative;
+  width: 80%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: $jaune;
+  @include border-radius(5px);
+  @include box-shadow(0px, 5px, 15px, #adadad, $inset: false);
+}
+
+.btn-scroll {
+  display: block;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  right: -1.5%;
+  bottom: -1.5%;
+  border: none;
+  background: $rouge;
+  @include border-radius(50%);
+  color: white;
+  @include box-shadow(0px, 0px, 15px, $pourpre, $inset: true);
+  transition: linear 0.1s;
+  cursor: pointer;
+  transform: rotate(90deg);
+
+  &:hover {
+    background-color: $pourpre;
+  }
+}
+
+label {
+  margin-bottom: 4%;
+  margin-left: 15%;
+  display: block;
+  font-family: Cabin;
+  font-size: 1.8em;
+  transition: linear 0.15s;
+  cursor: pointer;
+  color: white;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+input {
+  display: none;
+}
+
+input:checked + span,
+input:hover + span {
+  background-color: white;
+}
+
+input[type="checkbox"] + span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  margin-right: 7%;
+  border: 3px solid white;
+  @include border-radius(25%);
+  transition: linear 0.15s;
+  position: relative;
+}
+
+input[type="radio"] + span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  margin-right: 7%;
+  border: 3px solid white;
+  @include border-radius(50%);
+  transition: linear 0.15s;
+  position: relative;
+}
+
+.bool {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  label {
+    margin: 0;
+  }
+  /* comportement different des autres radio */
+  input:checked + span,
+  input:hover + span {
+    background-color: transparent;
+  }
+  /*style different */
+  input[type="radio"] + span {
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+    border: 7px solid white;
+    transition: linear 0.15s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*quand je choisis false */
+  input[type="radio"]:checked + .false,
+  input[type="radio"]:hover + .false {
+    border-color: $rouge;
+    color: $rouge;
+  }
+  /*quand je choisi true */
+  input[type="radio"] + .true:hover,
+  input[type="radio"]:checked + .true {
+    border-color: darkgreen;
+    color: darkgreen;
+  }
+}
+
+.false:before,
+.true:before {
+  font-size: 1.5em;
+}
+
+.false:before {
+  content: 'X';
+}
+
+.true:before {
+  content: '✓';
+}
+
+.scale {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+    span {
+      width: 25px;
+      height: 25px;
+      border: 5px solid white;
+      margin-bottom: 20%;
+    }
+
+    input[type="radio"]:checked + span {
+      border: 5px solid $rouge;
+      background-color: $rouge;
+    }
+  }
+}
+
+.phrase,
+.text {
+  display: flex;
+  justify-content: center;
+
+  input,
+  textarea {
+    display: block;
+    width: 90%;
+    min-height: 50px;
+    border: none;
+    background: none;
+    color: white;
+    font-family: PT Sans;
+    font-size: 2em;
+    transition: $transition;
+
+    &:focus {
+      outline: none;
+      border-bottom: 4px solid $pourpre;
+    }
+  }
+}
+
+button {
+  display: block;
+  margin-top: 5%;
+  border: none;
+  background-color: $bleu-claire;
+  padding: 5px 15px;
+  font-family: Cabin;
+  color: white;
+  letter-spacing: 2px;
+  @include border-radius(5%);
+  @include box-shadow(0px, 1px, 3px, rgb(27, 26, 27));
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.error {
+  position: absolute;
+  bottom: -5px;
+  left: 15px;
+  font-family: Cabin;
+  font-size: 1.25em;
+  color: $rouge;
+}
+/* ==MEDIA QUERY ==*/
+@media (max-width:1024px) {
+  .ask {
+    h2 {
+      width: 90%;
+      font-size: 3em;
+      padding: 2%;
+    }
+  }
+
+  .answer {
+    width: 90%;
+    font-size: 1.5em;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    top: 92%;
+    left:0;
+    width: 100%;
+  }
+}
