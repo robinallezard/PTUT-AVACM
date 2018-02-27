@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #3399cc;
+  font-family: PT Sans;
+  color: #faf9f8; }
+
+header {
+  background: #fec262;
+  padding: 0.5%;
+  -webkit-box-shadow: inset 0px 0px 30px #b47003;
+  -moz-box-shadow: inset 0px 0px 30px #b47003;
+  box-shadow: inset 0px 0px 30px #b47003;
+  text-align: center; }
+  header img {
+    width: 10%;
+    margin: auto; }
+  header h1 {
+    font-style: italic;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    margin: 1%; }
+
+.nav-btn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  padding: 15px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: 4px solid white;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  transition: linear 0.1s;
+  cursor: pointer;
+  color: white; }
+  .nav-btn:hover {
+    color: #989898;
+    border-color: #989898; }
+  .nav-btn:focus {
+    background-color: transparent; }
+
+.prev {
+  left: 2%; }
+
+.next {
+  right: 2%; }
+
+.sondage {
+  width: 25%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px;
+  text-align: center;
+  padding: 2%;
+  background-color: #f2f1ee;
+  color: black;
+  transition: linear 0.1s;
+  -webkit-box-shadow: 0px 0px 15px #2b489e;
+  -moz-box-shadow: 0px 0px 15px #2b489e;
+  box-shadow: 0px 0px 15px #2b489e;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px; }
+  .sondage:hover {
+    transform: translateY(2px); }
+  .sondage:last-child {
+    cursor: pointer; }
+  .sondage h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 1%; }
+  .sondage .btn,
+  .sondage .btn-large {
+    background-color: #ebeae4;
+    color: black;
+    transition: linear 0.1s;
+    margin: 2%; }
+    .sondage .btn:hover,
+    .sondage .btn-large:hover {
+      transform: scale(1.02);
+      color: #ebeae4;
+      background-color: #3399cc; }
+    .sondage .btn:active,
+    .sondage .btn-large:active {
+      transform: scale(1.05); }
+    .sondage .btn .fas,
+    .sondage .btn-large .fas {
+      font-size: 150%;
+      color: black; }
+  .sondage .svg-inline--fa {
+    font-size: 6em;
+    margin: 2%;
+    color: #2b489e; }
+
+@media (max-width: 992px) {
+  .sondage {
+    width: 40%;
+    justify-content: flex-start;
+    padding: 4%; }
+    .sondage h2 {
+      font-size: 1.3em;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2.5px;
+      line-height: 30px;
+      margin: 0;
+      margin-bottom: 2%; }
+    .sondage .btn,
+    .sondage .btn-large {
+      margin: 3%; } }
+
+/*# sourceMappingURL=selection.css.map */
