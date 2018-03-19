@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVACM</title>
+  <!-- font   -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin|PT+Sans" rel="stylesheet">
+  <!--    feuille de style-->
+  <!-- <link rel="stylesheet" href="assets/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="assets/css/creation.css">
+</head>
+
+<body>
+  <header>
+    <!-- nom sondage -->
+    <h1>Sondage étudiant</h1>
+  </header>
+  <main>
+    <form action="validation.html" method="post">
+      <!--           radio simple-->
+      <div class="ask">
+        <div class="title">
+          <input type="text" name="question1" placeholder="Votre question...">
+        </div>
+        <div class="answer">
+          <select name="type">
+              <option value="bool">bool</option>
+              <option value="check">check</option>
+              <option value="phrase">phrase</option>
+              <option value="radio">radio</option>
+              <option value="scale">scale</option>
+              <option value="text">text</option>
+              <option disabled selected>le type de question</option>
+            </select>
+          <p class="error"></p>
+          <strong class="btn-scroll"><i class="fas fa-plus"></i></strong>
+        </div>
+      </div>
+    </form>
+  </main>
+  <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
+  <script src="assets/js/fontawesome-all.min.js"></script>
+</body>
