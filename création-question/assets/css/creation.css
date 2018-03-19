@@ -1,0 +1,185 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #f2f1ee;
+  font-family: PT Sans;
+  color: #ebeae4;
+  letter-spacing: 1px; }
+
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding: 1%;
+  background-color: #d91e18;
+  text-align: center;
+  -webkit-box-shadow: inset 0px 0px 30px #3c0c0d;
+  -moz-box-shadow: inset 0px 0px 30px #3c0c0d;
+  box-shadow: inset 0px 0px 30px #3c0c0d; }
+
+h1 {
+  font-style: italic;
+  font-size: 2em; }
+
+main {
+  width: 100%;
+  height: 100vh; }
+
+.ask {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .ask .title {
+    width: 80%;
+    text-align: center;
+    color: black;
+    font-family: cabin;
+    font-size: 1em;
+    margin-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 15px #adadad;
+    -moz-box-shadow: 0px 5px 15px #adadad;
+    box-shadow: 0px 5px 15px #adadad; }
+    .ask .title input {
+      display: block;
+      width: 90%;
+      min-height: 50px;
+      border: none;
+      background: none;
+      color: black;
+      font-family: PT Sans;
+      font-size: 2em;
+      transition: linear 0.1s;
+      margin: 1%; }
+      .ask .title input:focus {
+        outline: none; }
+
+.answer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #2b489e;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 15px #adadad;
+  -moz-box-shadow: 0px 5px 15px #adadad;
+  box-shadow: 0px 5px 15px #adadad; }
+  .answer select {
+    border: none;
+    outline: none;
+    background: #3399cc;
+    color: white;
+    font-family: PT Sans;
+    font-size: 1.5em;
+    padding: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 10px #041059;
+    -moz-box-shadow: 0px 0px 10px #041059;
+    box-shadow: 0px 0px 10px #041059; }
+
+#ctrl {
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle; }
+
+.option {
+  display: flex; }
+
+.btn-scroll {
+  display: block;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  right: -1.5%;
+  bottom: -1.5%;
+  border: none;
+  background: #d91e18;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  color: white;
+  -webkit-box-shadow: inset 0px 0px 15px #96281b;
+  -moz-box-shadow: inset 0px 0px 15px #96281b;
+  box-shadow: inset 0px 0px 15px #96281b;
+  transition: linear 0.1s;
+  cursor: pointer;
+  transform: rotate(90deg); }
+  .btn-scroll:hover {
+    background-color: #96281b; }
+
+label {
+  margin-bottom: 4%;
+  margin-left: 15%;
+  display: block;
+  font-family: Cabin;
+  font-size: 1.8em;
+  transition: linear 0.15s;
+  cursor: pointer;
+  color: white; }
+  label:last-child {
+    margin-bottom: 0; }
+
+button {
+  display: block;
+  margin-top: 5%;
+  border: none;
+  padding: 5px 15px;
+  font-family: Cabin;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -webkit-box-shadow: 0px 1px 3px #1b1a1b;
+  -moz-box-shadow: 0px 1px 3px #1b1a1b;
+  box-shadow: 0px 1px 3px #1b1a1b;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: linear 0.1s; }
+  button:hover {
+    transform: scale(1.02); }
+
+#add_option {
+  background-color: #3399cc;
+  display: block; }
+
+.rem_option {
+  background-color: #96281b; }
+
+.error {
+  position: absolute;
+  bottom: -5px;
+  left: 15px;
+  font-family: Cabin;
+  font-size: 1.25em;
+  color: #d91e18; }
+
+/* ==MEDIA QUERY ==*/
+@media (max-width: 1024px) {
+  .ask h2 {
+    width: 90%;
+    font-size: 3em;
+    padding: 2%; }
+
+  .answer {
+    width: 90%;
+    font-size: 1.5em; } }
+
+/*# sourceMappingURL=creation.css.map */
