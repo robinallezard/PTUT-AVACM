@@ -1,0 +1,89 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #f2f1ee;
+  font-family: PT Sans;
+  color: #faf9f8; }
+
+header {
+  padding: 1%;
+  background-color: #d91e18;
+  text-align: center;
+  margin-bottom: 1%;
+  -webkit-box-shadow: inset 0px 0px 30px #3c0c0d;
+  -moz-box-shadow: inset 0px 0px 30px #3c0c0d;
+  box-shadow: inset 0px 0px 30px #3c0c0d; }
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  main a {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 6em;
+    color: white;
+    margin: 1%;
+    padding: 3%;
+    transition: linear 0.1s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    cursor: pointer; }
+    main a:first-child {
+      background: #fec262; }
+      main a:first-child:hover {
+        -webkit-box-shadow: inset 0px 0px 15px #5d3d0b;
+        -moz-box-shadow: inset 0px 0px 15px #5d3d0b;
+        box-shadow: inset 0px 0px 15px #5d3d0b; }
+    main a:nth-child(2) {
+      background: #3399cc; }
+      main a:nth-child(2):hover {
+        -webkit-box-shadow: inset 0px 0px 15px #121642;
+        -moz-box-shadow: inset 0px 0px 15px #121642;
+        box-shadow: inset 0px 0px 15px #121642; }
+    main a:nth-child(3) {
+      background: #2b489e; }
+      main a:nth-child(3):hover {
+        -webkit-box-shadow: inset 0px 0px 15px #050713;
+        -moz-box-shadow: inset 0px 0px 15px #050713;
+        box-shadow: inset 0px 0px 15px #050713; }
+    main a:last-child {
+      background: #d91e18; }
+      main a:last-child:hover {
+        -webkit-box-shadow: inset 0px 0px 15px #320000;
+        -moz-box-shadow: inset 0px 0px 15px #320000;
+        box-shadow: inset 0px 0px 15px #320000; }
+    main a h2 {
+      margin: 0;
+      font-family: PT Sans;
+      font-size: 0.5em; }
+    main a:active {
+      transform: scale(1.03); }
+  main .svg-inline--fa {
+    font-size: 0.8em; }
+
+@media (max-width: 1024px) {
+  main div {
+    width: 70%; } }
+@media (max-width: 768px) {
+  header {
+    font-size: 0.8em; }
+
+  .block {
+    font-size: 4em; }
+    .block h2 {
+      font-size: 0.8em; } }
+@media (max-width: 560px) {
+  header {
+    font-size: 0.8em; }
+
+  .block {
+    font-size: 3em; }
+    .block h2 {
+      font-size: 0.5em; } }
+
+/*# sourceMappingURL=admi.css.map */

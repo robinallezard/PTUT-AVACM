@@ -1,0 +1,24 @@
+//variables
+@import "import/variable.scss";
+@import "import/mixins.scss";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: $gris;
+  font-family: PT Sans;
+  color: $gris-claire;
+}
+
+header {
+  padding: 1%;
+  background-color: $rouge;
+  text-align: center;
+  margin-bottom: 1%;
+  @include box-shadow(0px, 0px, 30px, #3c0c0d, $inset: true);
+}
+
+label{
+  color:black;
+}

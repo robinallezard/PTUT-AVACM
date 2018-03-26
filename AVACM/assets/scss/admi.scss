@@ -1,0 +1,104 @@
+//variables
+@import "import/variable.scss";
+@import "import/mixins.scss";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: $gris;
+  font-family: PT Sans;
+  color: $gris-claire;
+}
+
+header {
+  padding: 1%;
+  background-color: $rouge;
+  text-align: center;
+  margin-bottom: 1%;
+  @include box-shadow(0px, 0px, 30px, #3c0c0d, $inset: true);
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+   a{
+    width:40%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 6em;
+    color: white;
+    margin:1%;
+    padding:3%;
+    transition: $transition;
+    @include border-radius(5px);
+    cursor: pointer;
+    &:first-child{
+      background: $jaune;
+      &:hover{
+        @include box-shadow(0px, 0px, 15px, #5d3d0b, $inset: true);
+      }
+    }
+    &:nth-child(2){
+      background: $bleu-claire;
+      &:hover{
+        @include box-shadow(0px, 0px, 15px, rgb(18, 22, 66), $inset: true);
+      }
+    }
+    &:nth-child(3){
+      background: $bleu-foncé;
+      &:hover{
+        @include box-shadow(0px, 0px, 15px, rgb(5, 7, 19), $inset: true);
+      }
+    }
+    &:last-child{
+      background: $rouge;
+      &:hover{
+        @include box-shadow(0px, 0px, 15px, rgb(50, 0, 0), $inset: true);
+      }
+    }
+    h2{
+      margin:0;
+      font-family: PT Sans;
+      font-size: 0.5em;
+    }
+    &:active {
+      transform: scale(1.03);
+    }
+  }
+  .svg-inline--fa{
+    font-size: 0.8em;
+  }
+}
+@media (max-width:1024px) {
+  main{
+    & div{
+      width: 70%;
+    }
+  }
+}
+@media (max-width:768px){
+  header {
+    font-size: 0.8em;
+  }
+  .block{
+    font-size: 4em;
+    h2{
+      font-size: 0.8em;
+    }
+
+  }
+}
+@media (max-width:560px){
+  header {
+    font-size: 0.8em;
+  }
+  .block{
+    font-size: 3em;
+    h2{
+      font-size: 0.5em;
+    }
+  }
+}

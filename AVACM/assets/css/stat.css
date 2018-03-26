@@ -1,0 +1,21 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #f2f1ee;
+  font-family: PT Sans;
+  color: #faf9f8; }
+
+header {
+  padding: 1%;
+  background-color: #d91e18;
+  text-align: center;
+  margin-bottom: 1%;
+  -webkit-box-shadow: inset 0px 0px 30px #3c0c0d;
+  -moz-box-shadow: inset 0px 0px 30px #3c0c0d;
+  box-shadow: inset 0px 0px 30px #3c0c0d; }
+
+label {
+  color: black; }
+
+/*# sourceMappingURL=stat.css.map */

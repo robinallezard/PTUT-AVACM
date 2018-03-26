@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVACM</title>
+  <!-- font   -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin|PT+Sans" rel="stylesheet">
+  <!--    feuille de style-->
+  <link rel="stylesheet" href="assets/css/chartist.min.css">
+  <link rel="stylesheet" href="assets/css/stat.css">
+</head>
+
+<body>
+  <header>
+    <!-- nom sondage -->
+    <h1>Sondage étudiant</h1>
+  </header>
+  <main>
+    <label for="select">
+      selectionner une donnée:
+      <select id="select" name="question">
+          <option value="population">population</option>
+          <option value="pib/hab">pib/hab</option>
+      </select>
+    </label>
+    <div id="visualisation" class="ct-chart"></div>
+    <div id="control">
+      <button type="button" onclick="drawGraph()">Chart</button>
+      <button type="button" onclick="drawGraph()">Bar</button>
+      <button type="button" onclick="drawGraph()">Pie</button>
+    </div>
+
+  </main>
+  <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/chartist.min.js"></script>
+  <script type="text/javascript" src="assets/js/stat.js"></script>
+</body>
+</html>
