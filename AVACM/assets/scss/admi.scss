@@ -35,6 +35,7 @@ main{
     transition: $transition;
     @include border-radius(5px);
     cursor: pointer;
+    text-decoration: none;
     &:first-child{
       background: $jaune;
       &:hover{

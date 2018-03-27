@@ -32,7 +32,8 @@ main {
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none; }
     main a:first-child {
       background: #fec262; }
       main a:first-child:hover {

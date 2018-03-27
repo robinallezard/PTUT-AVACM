@@ -25,53 +25,53 @@
     <div class="slide">
       <div class="sondage">
         <h2>Ressenti experience<br>utilisateur</h2>
-        <a class="waves-effect waves-light btn">Participer au sondage</a>
+        <a href="profil.php" class="waves-effect waves-light btn">Participer au sondage</a>
       </div>
       <div class="sondage">
         <h2>Ressenti experience<br>utilisateur</h2>
-        <a class="waves-effect waves-light btn">Participer au sondage</a>
+        <a href="profil.php" class="waves-effect waves-light btn">Participer au sondage</a>
       </div>
       <div class="sondage">
         <h2>Ressenti experience<br>utilisateur</h2>
-        <a class="waves-effect waves-light btn">Participer au sondage</a>
+        <a href="profil.php" class="waves-effect waves-light btn">Participer au sondage</a>
       </div>
       <div class="sondage">
         <h2>Ressenti experience<br>utilisateur</h2>
-        <a class="waves-effect waves-light btn">Participer au sondage</a>
+        <a href="profil.php" class="waves-effect waves-light btn">Participer au sondage</a>
       </div>
       <div class="sondage">
         <h2>Ressenti experience<br>utilisateur</h2>
-        <a class="waves-effect waves-light btn">Participer au sondage</a>
+        <a href="profil.php" class="waves-effect waves-light btn">Participer au sondage</a>
       </div>
       <div class="sondage">
         <h2>Ressenti experience<br>utilisateur</h2>
-        <a class="waves-effect waves-light btn">Participer au sondage</a>
+        <a href="profil.php" class="waves-effect waves-light btn">Participer au sondage</a>
       </div>
     </div>
     <div class="slide">
       <div class="sondage">
         <h2>Ressenti experience<br>utilisateur</h2>
-        <a class="waves-effect waves-light btn">Participer au sondage</a>
+        <a href="profil.php" class="waves-effect waves-light btn">Participer au sondage</a>
       </div>
       <div class="sondage">
         <h2>Ressenti experience<br>utilisateur</h2>
-        <a class="waves-effect waves-light btn">Participer au sondage</a>
+        <a href="profil.php" class="waves-effect waves-light btn">Participer au sondage</a>
       </div>
       <div class="sondage">
         <h2>Ressenti experience<br>utilisateur</h2>
-        <a class="waves-effect waves-light btn">Participer au sondage</a>
+        <a href="profil.php" class="waves-effect waves-light btn">Participer au sondage</a>
       </div>
       <div class="sondage">
         <h2>Ressenti experience<br>utilisateur</h2>
-        <a class="waves-effect waves-light btn">Participer au sondage</a>
+        <a href="profil.php" class="waves-effect waves-light btn">Participer au sondage</a>
       </div>
       <div class="sondage">
         <h2>Ressenti experience<br>utilisateur</h2>
-        <a class="waves-effect waves-light btn">Participer au sondage</a>
+        <a href="profil.php" class="waves-effect waves-light btn">Participer au sondage</a>
       </div>
       <div class="sondage">
         <h2>Ressenti experience<br>utilisateur</h2>
-        <a class="waves-effect waves-light btn">Participer au sondage</a>
+        <a href="profil.php" class="waves-effect waves-light btn">Participer au sondage</a>
       </div>
     </div>
   </main>

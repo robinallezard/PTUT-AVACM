@@ -21,7 +21,7 @@
       <h2>Statistiques</h2>
       <i class="fas fa-eye"></i>
     </a>
-    <a href="modification.php" class="block">
+    <a href="modif.php" class="block">
       <h2>Modifier les<br>questions</h2>
       <i class="fas fa-question"></i>
     </a>
