@@ -27,10 +27,10 @@
       <a name="#question6"></a>
     </nav>
     <main>
-        <form action="end.html" method="post">
+        <form action="end.php" method="post">
           <div id="question1" class="ask">
               <h2>Comment vous êtes vous senti lors de l'examen?</h2>
-              <div class="answer check">
+              <div class="answer radio">
                   <label for="réponse1">
                       <input id="réponse1" type="radio" name="test">
                       <span class="span"></span>ça va bien merci

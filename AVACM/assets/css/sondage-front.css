@@ -8,6 +8,9 @@ html {
   color: #ebeae4;
   letter-spacing: 1px; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 header {
   position: fixed;
   z-index: 10;

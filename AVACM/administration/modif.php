@@ -53,31 +53,20 @@
           <button class="change" type="button"><i class="fas fa-exchange-alt"></i></button>
         </div>
       </div>
-      <div class="question">
-        <h3>La question 6</h3>
-        <div class="ctrl">
-          <button class="remove" type="button">&#215;</button>
-          <button class="change" type="button"><i class="fas fa-exchange-alt"></i></button>
-        </div>
-      </div>
-      <div class="question">
-        <h3>La question 7</h3>
-        <div class="ctrl">
-          <button class="remove" type="button">&#215;</button>
-          <button class="change" type="button"><i class="fas fa-exchange-alt"></i></button>
-        </div>
-      </div>
-      <div class="question">
-        <h3>La question 8</h3>
-        <div class="ctrl">
-          <button class="remove" type="button">&#215;</button>
-          <button class="change" type="button"><i class="fas fa-exchange-alt"></i></button>
-        </div>
-      </div>
+      <a href="ajout.php" id="ad">Ajouter une question</a>
     </div>
   </main>
 
   <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
   <script src="../assets/js/fontawesome-all.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready(init);
+
+      function init(){
+        $('.remove').click(function(){
+          alert('Voulez-vous vraiment supprimer ce formulaire définitivement?');
+        });
+      }
+  </script>
 </body>
 </html>

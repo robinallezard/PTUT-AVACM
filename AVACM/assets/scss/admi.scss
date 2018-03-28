@@ -12,11 +12,35 @@ html {
 }
 
 header {
-  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
   background-color: $rouge;
   text-align: center;
   margin-bottom: 1%;
   @include box-shadow(0px, 0px, 30px, #3c0c0d, $inset: true);
+  input{
+    margin:auto;
+    font-family: PT Sans;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 2em;
+  }
+  button {
+    border: none;
+    padding: 10px 10px;
+    font-family: Cabin;
+    color: white;
+    letter-spacing: 2px;
+    @include border-radius(2px);
+    @include box-shadow(0px, 1px, 3px, rgb(27, 26, 27));
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: linear 0.04s;
+    background-color: $pourpre;
+  }
 }
 
 main{

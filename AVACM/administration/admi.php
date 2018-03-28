@@ -14,7 +14,10 @@
 <body>
   <header>
     <!-- nom sondage -->
-    <h1>Sondage étudiant</h1>
+    <form class="" action="" method="post">
+      <input type="text" name="titre_formulaire" placeholder="Sondage étudiant">
+      <button type="submit" name="button">Modifier le nom</button>
+    </form>
   </header>
   <main>
     <a href="stat.html" class="block">

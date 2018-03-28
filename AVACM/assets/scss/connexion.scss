@@ -45,6 +45,16 @@ input{
     }
 }
 
+span{
+  display:block;
+  width:100%;
+  font-size: 1em;
+  font-weight: bold;
+  color: $pourpre;
+  text-align: center;
+  margin-top:25px;
+}
+
 @media(max-width:992px){
     #login{
         width:55vw;

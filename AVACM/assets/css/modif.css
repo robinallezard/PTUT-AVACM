@@ -6,6 +6,10 @@ html {
   font-family: PT Sans;
   color: #faf9f8; }
 
+a {
+  text-decoration: none;
+  color: white; }
+
 header {
   padding: 1%;
   background-color: #d91e18;
@@ -43,7 +47,7 @@ main {
     justify-content: space-between;
     align-items: center;
     margin: 2%;
-    width: 55%; }
+    width: 50%; }
     .ask .question .ctrl {
       display: flex;
       justify-content: space-between; }
@@ -51,19 +55,31 @@ main {
 button {
   border: none;
   color: white;
-  padding: 15px;
+  padding: 20px;
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-box-shadow: 0px 0px 5px #1c0458;
   -moz-box-shadow: 0px 0px 5px #1c0458;
   box-shadow: 0px 0px 5px #1c0458;
-  margin: 5px; }
+  margin: 5px;
+  cursor: pointer; }
 
 .remove {
   background-color: #d91e18; }
 
 .change {
   background-color: #fec262; }
+
+#ad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  background: #3399cc;
+  color: white;
+  transition: linear 0.1s;
+  cursor: pointer;
+  padding: 15px; }
 
 /*# sourceMappingURL=modif.css.map */

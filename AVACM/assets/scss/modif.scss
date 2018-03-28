@@ -11,6 +11,10 @@ html {
   color: $gris-claire;
 }
 
+a{
+  text-decoration: none;
+  color:white;
+}
 header {
   padding: 1%;
   background-color: $rouge;
@@ -45,7 +49,7 @@ main{
     justify-content: space-between;
     align-items: center;
     margin:2%;
-    width:55%;
+    width:50%;
     .ctrl{
       display: flex;
       justify-content: space-between;
@@ -57,15 +61,31 @@ main{
 button{
   border:none;
   color: white;
-  padding: 15px;
+  padding: 20px;
   @include border-radius(2px);
   @include box-shadow(0px, 0px, 5px, rgb(28, 4, 88), $inset: false);
   margin: 5px;
+  cursor: pointer;
 }
+
 
 .remove{
   background-color: $rouge;
 }
+
 .change{
   background-color: $jaune;
+}
+
+
+#ad{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  background: $bleu-claire;
+  color: white;
+  transition: linear 0.1s;
+  cursor: pointer;
+  padding:15px;
 }

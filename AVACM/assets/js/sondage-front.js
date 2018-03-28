@@ -59,9 +59,7 @@ function error() {
     else if (formEnter == 'answer text') {
 
       var input = $(answer).find('textarea'); // on cherche les differents questions stockées dans un tab 'input'
-      console.log(input);
       var value = $(input).val();
-      console.log(value);
       if (!value) {
         $(place).empty().append('veuillez remplir ce champ'); // on affiche une erreur
       } else if (value) {
@@ -84,9 +82,7 @@ function scrollAsk(e) { // prend en argument le .answer current
 
 function navCtrl(e){
   var  id = e.attr('id');
-  console.log(id);
   var currentA = document.querySelector('[name="#'+id+'"]');
-  console.log(currentA);
    $(currentA).css('background', '#96281b');
 }
 
@@ -94,11 +90,3 @@ function navCtrl(e){
 $('form *').on('keypress', function(e) {
   return e.which !== 13;
 });
-
-
-/* function valider(){
-  var allInput = $(document).find('input'); // on selectionne tous les inputs
-  var area = $(document).find('textarea'); // on selectionne tous les inputs
-  allInput.push(area);
-  console.log(allInput);
-} */
