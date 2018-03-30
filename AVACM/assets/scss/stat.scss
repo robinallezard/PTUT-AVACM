@@ -15,10 +15,62 @@ header {
   padding: 1%;
   background-color: $rouge;
   text-align: center;
-  margin-bottom: 1%;
+  margin-bottom: 3%;
   @include box-shadow(0px, 0px, 30px, #3c0c0d, $inset: true);
 }
 
-label{
-  color:black;
+label {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+  vertical-align: middle;
+  font-family: Cabin;
+  margin-bottom: 3%;
+  select {
+    border: none;
+    color: $pourpre;
+    outline: none;
+    font-size: 0.8em;
+    background: $gris-claire;
+    color: black;
+    padding: 5px;
+    @include box-shadow(0px, 1px, 3px, #3c0c0d, $inset: false);
+  }
+}
+
+#control {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  button {
+    display: block;
+    border: none;
+    padding: 5px 15px;
+    font-family: Cabin;
+    color: white;
+    letter-spacing: 2px;
+    background-color: $pourpre;
+    @include border-radius(5%);
+    @include box-shadow(0px, 1px, 3px, rgb(27, 26, 27));
+    margin:2%;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: linear 0.04s;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+#result{
+  display: flex;
+  justify-content: center;
+}
+
+.ct-svg-inline{
+  display:block;
+  margin:auto;
 }

@@ -80,7 +80,7 @@ function scrollAsk(e) { // prend en argument le .answer current
 }
 
 
-function navCtrl(e){
+function navCtrl(e){  
   var  id = e.attr('id');
   var currentA = document.querySelector('[name="#'+id+'"]');
    $(currentA).css('background', '#96281b');

@@ -1,29 +1,27 @@
-{
-  "pays": [
-    {
-      "nom": "france",
-      "population": 60 000 000,
-      "pib/hab": 15 000
-    },
-    {
-      "nom": "allemagne",
-      "population": 75 000 000,
-      "pib/hab": 20 000
-    },
-    {
-      "nom": "usa",
-      "population": 200 000 000,
-      "pib/hab": 17 000
-    },
-    {
-      "nom": "uk",
-      "population": 45 000 000,
-      "pib/hab": 30 000
-    },
-    {
-      "nom": "espagne",
-      "population": 35 000 000,
-      "pib/hab": 10 000
-    }
-  ]
-}
+[
+  {
+    "nom": "france",
+    "population": 60000000,
+    "pib/hab": 15000
+  },
+  {
+    "nom": "allemagne",
+    "population": 75000000,
+    "pib/hab": 20000
+  },
+  {
+    "nom": "usa",
+    "population": 200000000,
+    "pib/hab": 17000
+  },
+  {
+    "nom": "uk",
+    "population": 45000000,
+    "pib/hab": 30000
+  },
+  {
+    "nom": "espagne",
+    "population": 35000000,
+    "pib/hab": 10000
+  }
+]

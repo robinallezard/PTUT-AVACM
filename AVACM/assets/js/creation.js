@@ -1,8 +1,6 @@
 $(document).ready(init);
 
-
 function init() {
-
   var select = document.getElementById('select');
   var champ = document.getElementById('champ');
 

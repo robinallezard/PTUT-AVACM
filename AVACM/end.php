@@ -17,11 +17,13 @@
         <!-- nom sondage -->
         <h1>Sondage étudiant</h1>
     </header>
+    <main>
       <div id="message">
         <h2>Merci d'avoir participé à ce sondage</h2>
         <p>Les informations que vous venez de saisir sont
           strictement confidentielles et ne serviront qu'à améliorer notre application</p>
       </div>
       <a href="index.php">Revenir à l'acceuil</a>
+      </main>
   </body>
 </html>

@@ -19,7 +19,7 @@
   </header>
   <main>
     <label for="select">
-      selectionner une donnée:
+      Sélectionnez une donnée:
       <select id="select" name="question">
           <option value="population">population</option>
           <option value="pib/hab">pib/hab</option>
@@ -27,11 +27,11 @@
     </label>
     <div id="visualisation" class="ct-chart"></div>
     <div id="control">
-      <button type="button" onclick="drawGraph()">Chart</button>
-      <button type="button" onclick="drawGraph()">Bar</button>
-      <button type="button" onclick="drawGraph()">Pie</button>
+      <button id="chart" type="button">Chart</button>
+      <button id="bar" type="button">Bar</button>
+      <button id="pie" type="button">Pie</button>
     </div>
-
+  <div id="result" style="color:black; width:1000px;margin-left:25px;"></div>
   </main>
   <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="../assets/js/chartist.min.js"></script>
