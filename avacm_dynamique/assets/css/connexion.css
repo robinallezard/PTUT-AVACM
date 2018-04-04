@@ -13,14 +13,20 @@ body {
   width: 40vw;
   background: #faf9f8;
   padding: 25px;
-  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.46);
-  -moz-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.46);
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.46); }
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.46);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.46);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
   #login img {
     width: 25%;
     display: block;
     margin: auto;
     margin-bottom: 5%; }
+
+input:focus {
+  border-bottom-color: #2b489e; }
 
 .btn {
   display: block;
@@ -30,6 +36,15 @@ body {
     background: #e74c3c; }
   .btn:active {
     transform: scale(1.05); }
+
+span {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  color: #96281b;
+  text-align: center;
+  margin-top: 25px; }
 
 @media (max-width: 992px) {
   #login {

@@ -1,0 +1,91 @@
+//variables
+@import "import/variable.scss";
+@import "import/mixins.scss";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: $gris;
+  font-family: PT Sans;
+  color: $gris-claire;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+header {
+  padding: 1%;
+  background-color: $rouge;
+  text-align: center;
+  margin-bottom: 1%;
+  @include box-shadow(0px, 0px, 30px, #3c0c0d, $inset: true);
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ask {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  width: 80%;
+  padding:2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: $bleu-foncé;
+  @include border-radius(5px);
+  @include box-shadow(0px, 5px, 15px, #adadad, $inset: false);
+
+  .question{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:2%;
+    width:50%;
+    .ctrl{
+      display: flex;
+      justify-content: space-between;
+    }
+
+  }
+}
+
+button{
+  border:none;
+  color: white;
+  padding: 20px;
+  @include border-radius(2px);
+  @include box-shadow(0px, 0px, 5px, rgb(28, 4, 88), $inset: false);
+  margin: 5px;
+  cursor: pointer;
+}
+
+
+.remove{
+  background-color: $rouge;
+}
+
+.change{
+  background-color: $jaune;
+}
+
+
+#ad{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  background: $bleu-claire;
+  color: white;
+  transition: linear 0.1s;
+  cursor: pointer;
+  padding:15px;
+}

@@ -1,14 +1,15 @@
-<?php include './includes/autoloader.php';
+<?php require_once './includes/autoloader.php';
 Admin::getAdmin();
 App::getDatabase();
+$error = '';
 if($_POST){
   if(isset($_POST['identifiant']) && isset($_POST['mdp'])){
     $login=strip_tags(($_POST['identifiant']));
     $password=strip_tags(($_POST['mdp']));
-  if($login == Admin::$login && password_verify($password,Admin::$password) /*$password == Admin::$password*/ ){
-      header("Location: ./selection.php");
+  if($login == Admin::$login && password_verify($password,Admin::$password)){
+      header("Location: ./administration/");
     } else {
-      echo "<p>Mauvais couple login/mot de passe.<p>";
+      $error = 'erreur lors de votre tentative de connexion';
     }
   }
 }
@@ -42,6 +43,7 @@ if($_POST){
             </div>
              <button class="btn" type="submit" name="action">connexion
   </button>
+  <span>  <?php echo $error  ?></span>
         </form>
     </div>
 

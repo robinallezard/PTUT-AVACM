@@ -1,7 +1,7 @@
 <?php require_once './includes/autoloader.php';
 Admin::getAdmin();
 App::getDatabase();
-$error = '';
+$error = null;
 if($_POST){
   if(isset($_POST['identifiant']) && isset($_POST['mdp'])){
     $login=strip_tags(($_POST['identifiant']));
@@ -43,7 +43,9 @@ if($_POST){
             </div>
              <button class="btn" type="submit" name="action">connexion
   </button>
-    <span>  <?php echo $error  ?></span>
+  <?php if(isset($error)){ ?>
+    <span><?=$error?> </span>
+  <?php } ?>
         </form>
     </div>
 

@@ -1,0 +1,27 @@
+[
+  {
+    "nom": "france",
+    "population": 60000000,
+    "pib/hab": 15000
+  },
+  {
+    "nom": "allemagne",
+    "population": 75000000,
+    "pib/hab": 20000
+  },
+  {
+    "nom": "usa",
+    "population": 200000000,
+    "pib/hab": 17000
+  },
+  {
+    "nom": "uk",
+    "population": 45000000,
+    "pib/hab": 30000
+  },
+  {
+    "nom": "espagne",
+    "population": 35000000,
+    "pib/hab": 10000
+  }
+]

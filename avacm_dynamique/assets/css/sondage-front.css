@@ -8,6 +8,9 @@ html {
   color: #ebeae4;
   letter-spacing: 1px; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 header {
   position: fixed;
   z-index: 10;
@@ -85,24 +88,19 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45px;
-  height: 45px;
-  right: -1.5%;
-  bottom: -1.5%;
+  right: 0;
+  bottom: 0;
   border: none;
-  background: #d91e18;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
+  background: #3399cc;
   color: white;
-  -webkit-box-shadow: inset 0px 0px 15px #96281b;
-  -moz-box-shadow: inset 0px 0px 15px #96281b;
-  box-shadow: inset 0px 0px 15px #96281b;
+  -webkit-box-shadow: 0px 0px 5px #8e6b34;
+  -moz-box-shadow: 0px 0px 5px #8e6b34;
+  box-shadow: 0px 0px 5px #8e6b34;
   transition: linear 0.1s;
   cursor: pointer;
-  transform: rotate(90deg); }
+  padding: 15px; }
   .btn-scroll:hover {
-    background-color: #96281b; }
+    background-color: #2b489e; }
 
 label {
   margin-bottom: 4%;

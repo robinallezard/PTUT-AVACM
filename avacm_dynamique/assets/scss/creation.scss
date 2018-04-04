@@ -12,10 +12,13 @@ html {
   letter-spacing: 1px;
 }
 
+a, a:visited, a:active{
+  text-decoration: none;
+}
+
 header {
-  position: fixed;
-  z-index: 10;
-  width: 100%;
+  // position: fixed;
+  // z-index: 10;
   padding: 1%;
   background-color: $rouge;
   text-align: center;
@@ -27,18 +30,12 @@ h1 {
   font-size: 2em;
 }
 
-main {
-  width: 100%;
-  height: 100vh;
-}
-
 .ask {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  margin-top: 5%;
   .title {
     width: 80%;
     text-align: center;
@@ -46,13 +43,13 @@ main {
     font-family: cabin;
     font-size: 1em;
     margin-bottom: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 1% 3%;
     @include border-radius(5px);
     @include box-shadow(0px, 5px, 15px, #adadad, $inset: false);
-    input{
+
+    input {
       display: block;
-      width: 90%;
+      width: 100%;
       min-height: 50px;
       border: none;
       background: none;
@@ -60,7 +57,8 @@ main {
       font-family: PT Sans;
       font-size: 2em;
       transition: $transition;
-      margin:1%;
+      margin: 1%;
+
       &:focus {
         outline: none;
       }
@@ -69,25 +67,35 @@ main {
 }
 
 .answer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 80%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 3%;
   background-color: $bleu-foncé;
+  margin-bottom: 2%;
   @include border-radius(5px);
   @include box-shadow(0px, 5px, 15px, #adadad, $inset: false);
 
-  select{
-    border:none;
+  select {
+    border: none;
     outline: none;
-    background:$bleu-claire;
-    color:white;
+    background: $gris-claire;
+    color: black;
     font-family: PT Sans;
     font-size: 1.5em;
-    padding:3px;
+    padding: 3px;
     @include border-radius(3px);
     @include box-shadow(0px, 0px, 10px, #041059, $inset: false);
+    margin-right: 2%;
   }
+}
+
+#ctrl {
+  display: flex;
+  width: 100%;
+  margin-bottom: 3%;
 }
 
 .btn-scroll {
@@ -129,147 +137,9 @@ label {
   }
 }
 
-input {
-  display: none;
-}
-
-input:checked + span,
-input:hover + span {
-  background-color: white;
-}
-
-input[type="checkbox"] + span {
-  display: inline-block;
-  vertical-align: middle;
-  width: 15px;
-  height: 15px;
-  margin-right: 7%;
-  border: 3px solid white;
-  @include border-radius(25%);
-  transition: linear 0.15s;
-  position: relative;
-}
-
-input[type="radio"] + span {
-  display: inline-block;
-  vertical-align: middle;
-  width: 15px;
-  height: 15px;
-  margin-right: 7%;
-  border: 3px solid white;
-  @include border-radius(50%);
-  transition: linear 0.15s;
-  position: relative;
-}
-
-.bool {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  label {
-    margin: 0;
-  }
-  /* comportement different des autres radio */
-  input:checked + span,
-  input:hover + span {
-    background-color: transparent;
-  }
-  /*style different */
-  input[type="radio"] + span {
-    vertical-align: middle;
-    width: 75px;
-    height: 75px;
-    border: 7px solid white;
-    transition: linear 0.15s;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /*quand je choisis false */
-  input[type="radio"]:checked + .false,
-  input[type="radio"]:hover + .false {
-    border-color: $rouge;
-    color: $rouge;
-  }
-  /*quand je choisi true */
-  input[type="radio"] + .true:hover,
-  input[type="radio"]:checked + .true {
-    border-color: darkgreen;
-    color: darkgreen;
-  }
-}
-
-.false:before,
-.true:before {
-  font-size: 1.5em;
-}
-
-.false:before {
-  content: 'X';
-}
-
-.true:before {
-  content: '✓';
-}
-
-.scale {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-
-  label {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-
-    span {
-      width: 25px;
-      height: 25px;
-      border: 5px solid white;
-      margin-bottom: 20%;
-    }
-
-    input[type="radio"]:checked + span {
-      border: 5px solid $rouge;
-      background-color: $rouge;
-    }
-  }
-}
-
-.phrase,
-.text {
-  display: flex;
-  justify-content: center;
-
-  input,
-  textarea {
-    display: block;
-    width: 90%;
-    min-height: 50px;
-    border: none;
-    background: none;
-    color: white;
-    font-family: PT Sans;
-    font-size: 2em;
-    transition: $transition;
-
-    &:focus {
-      outline: none;
-      border-bottom: 4px solid $pourpre;
-    }
-  }
-}
-
 button {
   display: block;
-  margin-top: 5%;
   border: none;
-  background-color: $bleu-claire;
   padding: 5px 15px;
   font-family: Cabin;
   color: white;
@@ -278,11 +148,36 @@ button {
   @include box-shadow(0px, 1px, 3px, rgb(27, 26, 27));
   font-size: 1.5em;
   cursor: pointer;
-  transition: $transition;
+  transition: linear 0.04s;
 
   &:hover {
-    transform: scale(1.03);
+    transform: scale(1.1);
   }
+}
+
+#add_option {
+  margin: 0;
+  background-color: $bleu-claire;
+  display: block;
+}
+
+#champ {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width:100%;
+  .option {
+    margin: 10px;
+    display: flex;
+    input[type="text"] {
+      margin-right: 3%;
+    }
+  }
+}
+
+.rem_option {
+  background-color: $pourpre;
 }
 
 .error {
@@ -294,20 +189,47 @@ button {
   color: $rouge;
 }
 
+.exit{
+  background-color: $pourpre;
+}
 /* ==MEDIA QUERY ==*/
-
 @media (max-width:1024px) {
-
-.ask{
+  .ask {
     h2 {
       width: 90%;
       font-size: 3em;
       padding: 2%;
     }
-}
+  }
 
   .answer {
     width: 90%;
     font-size: 1.5em;
+  }
+}
+
+
+@media (max-width:768px){
+  #champ {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+    .option {
+      margin: 10px;
+      display: flex;
+      width: 46%;
+      input[type="text"] {
+        margin-right: 3%;
+        width:75%;
+      }
+    }
+  }
+}
+
+@media (max-width:500px){
+  #select{
+    font-size:0.8em;
   }
 }
