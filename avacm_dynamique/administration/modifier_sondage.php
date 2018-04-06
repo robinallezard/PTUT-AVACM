@@ -1,12 +1,12 @@
 <?php
-require_once './includes/autoloader.php';
-App::getDatabase();
-$id_formulaire=$_GET['id'];
-$parameters= array($id_formulaire);
-$formulaire = App::$database->query("SELECT titre_formulaire FROM formulaire WHERE id_formulaire=?",$parameters)->fetch(PDO::FETCH_OBJ);
-$questions = App::$database->query("SELECT * FROM question NATURAL JOIN comporte NATURAL JOIN formulaire WHERE comporte.id_formulaire=?",$parameters)->fetchAll(PDO::FETCH_OBJ);
-$nb_questions=count($questions);
- ?>
+  require_once './includes/autoloader.php';
+  App::getDatabase();
+  $id_formulaire=$_GET['id'];
+  $parameters= array($id_formulaire);
+  $formulaire = App::$database->query("SELECT titre_formulaire FROM formulaire WHERE id_formulaire=?",$parameters)->fetch(PDO::FETCH_OBJ);
+  $questions = App::$database->query("SELECT * FROM question NATURAL JOIN comporte NATURAL JOIN formulaire WHERE comporte.id_formulaire=?",$parameters)->fetchAll(PDO::FETCH_OBJ);
+  $nb_questions=count($questions);
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -40,9 +40,9 @@ $nb_questions=count($questions);
         </div>
       <?php } ?>
 
-      <!-- <a href="ajouter_question.php?id=<?=$id_formulaire?>" id="ad">Ajouter une nouvelle question</a> -->
+      <a href="ajouter_question.php?id=<?=$id_formulaire?>" id="ad">Ajouter une nouvelle question</a>
 
-      <a href="liste_questions_existantes.php?id=<?=$id_formulaire?>" id="ad">Ajouter une question existante</a>
+      <a href="questions_existantes.php?id=<?=$id_formulaire?>" id="ad">Ajouter une question existante</a>
 
     </div>
 

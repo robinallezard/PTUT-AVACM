@@ -4,19 +4,24 @@
 ?>
 <?php
 if($_POST){
+  // enregistrement de l'utilisateur dans la base de données si touts les champs nécessaire sont définis
   if(isset($_POST['age_utilisateur']) && isset($_POST['sexe_utilisateur'])  && isset($_POST['etiquette_utilisateur'])  && isset($_POST['statut_utilisateur'])){
+    // vérification des champs - à compléter avec des REGEX
     $age=strip_tags(($_POST['age_utilisateur']));
     $sexe=strip_tags(($_POST['sexe_utilisateur']));
     $etiquette=strip_tags(($_POST['etiquette_utilisateur']));
     $statut=strip_tags(($_POST['statut_utilisateur']));
     $parameters = array($age,$sexe,$etiquette,$statut);
+    // la requête d'ajout à la base
     App::$database->query("INSERT INTO utilisateur (age_utilisateur,sexe_utilisateur,etiquette_utilisateur,statut_utilisateur) values (?,?,?,?)",$parameters);
     $id_utilisateur=App::$database->lastInsertId();
   }
 }
+  //récupération du formulaire
   $id_formulaire=$_GET['id'];
   $parameters= array($id_formulaire);
   $formulaire = App::$database->query("SELECT titre_formulaire FROM formulaire WHERE id_formulaire=?",$parameters)->fetch(PDO::FETCH_OBJ);
+  //récupération des questions liées au formulaire
   $questions = App::$database->query("SELECT * FROM question NATURAL JOIN comporte NATURAL JOIN formulaire WHERE comporte.id_formulaire=?",$parameters)->fetchAll();
   $nb_questions=count($questions);
 ?>
@@ -25,14 +30,18 @@ if($_POST){
 <html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AVACM</title>
-    <!-- font   -->
+
+    <!-- fonts   -->
     <link href="https://fonts.googleapis.com/css?family=Cabin|PT+Sans" rel="stylesheet">
+
     <!--    feuille de style-->
-    <!-- <link rel="stylesheet" href="assets/css/materialize.min.css"> -->
     <link rel="stylesheet" href="assets/css/sondage-front.css">
+
 </head>
 
 <body>
@@ -129,7 +138,7 @@ if($_POST){
           <?php  } ?>
           <input name="id_utilisateur" type="hidden" value="<?=$id_utilisateur?>">
           <!-- <input name="nb_questions" type="hidden" value="<?=$nb_questions?>"> -->
-            <button type="submit">Fin</button>
+          <button type="submit">Fin</button>
         </form>
     </main>
     <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>

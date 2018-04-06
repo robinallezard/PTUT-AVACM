@@ -70,6 +70,6 @@
   <!-- <script type="text/javascript" src="../assets/js/materialize.min.js"></script> -->
   <script type="text/javascript" src="../assets/js/fontawesome-all.min.js"></script>
   <script type="text/javascript" src="../assets/js/slick.js"></script>
-  <script type="text/javascript" src="../assets/js/main.js"></script>
+  <script type="text/javascript" src="../assets/js/slider.js"></script>
 </body>
 </html>

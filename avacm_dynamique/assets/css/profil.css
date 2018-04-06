@@ -76,10 +76,10 @@ select {
   margin-right: 2%;
   border: none; }
 
-#genre {
+#sexe {
   display: flex;
   width: 50%; }
-  #genre label {
+  #sexe label {
     width: 33%; }
 
 input:checked + span,
